@@ -1,0 +1,204 @@
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+  background-color: #FF6000;
+}
+
+h1, h2, h3 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  color: white;
+}
+
+p {
+  font-family: 'Roboto', sans-serif;
+  font-weight: normal;
+  font-size: 1.5em;
+  color: white;
+  margin-left: 3%;
+}
+
+img {
+  border: 0.3em solid white;
+  margin-right: 1em;
+}
+
+a {
+  text-decoration: none;
+  color: yellow;
+}
+
+a:hover {
+  color: white;
+}
+
+/* Navigation */
+
+#navigationContainer {
+  width: 100%;
+  position: absolute;
+  background-color: white;
+  top: 0;
+  left: 0;
+}
+
+#navigation {
+  width: 90%;
+  margin: auto;
+}
+
+#logo {
+  float: left;
+}
+
+div#logo a {
+  font-family: 'Racing Sans One', cursive;
+  font-size: 2em;
+  color: black;
+}
+
+#nav {
+  float: right;
+  padding-top: 2em;
+  list-style-type: none;
+}
+
+div#nav li {
+  display: inline;
+  margin-left: 2em;
+}
+
+div#nav a {
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  font-size: 1.5em;
+  color: black;
+}
+
+div#nav a:hover {
+  border-bottom: 5px solid black;
+}
+
+.currentPage {
+  border-bottom: 5px solid black;
+}
+
+/* Content */
+
+.contentContainer {
+  padding-top: 10em;
+  padding-bottom: 5em;
+  width: 70%;
+  margin: auto;
+}
+
+.bodyContainer {
+  background-color: #960300;
+  box-shadow: 0.5em 0.5em black;
+  padding: 0.5em 2.5em 0.5em 2.5em;
+}
+
+#homeBody {
+  font-size: 3em;
+  text-align: center;
+  padding: 0.5em 1.5em 0.5em 1.5em;
+  margin: 0;
+}
+
+#homeImage {
+  display: block;
+  margin: auto;
+  border: none;
+  margin-bottom: 5em;
+}
+
+.documentation {
+  text-indent: 2em;
+}
+
+canvas {
+  margin-top: 10em;
+  margin-bottom: 5em;
+  margin-left: 38%;
+}
+
+#footer {
+  width: 100%;
+  position: absolute;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  padding-top: .5em;
+  padding-bottom: .5em;
+  bottom: 0;
+  left: 0;
+  color: black;
+  background-color: white;
+  text-align: center;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 1225px) {
+  #logo {
+    float: none;
+    text-align: center;
+  }
+
+  #nav {
+    float: none;
+    text-align: center;
+    padding-top: 0;
+    padding-bottom: 1em;
+  }
+
+  div#nav li {
+    margin-left: 0;
+    margin-right: 2em;
+  }
+
+  .contentContainer {
+    padding-top: 13em;
+  }
+
+  #homeBody {
+    font-size: 2em;
+  }
+
+  img {
+    margin-bottom: 0.5em;
+  }
+
+  #game {
+    margin-top: 14em;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  div#logo a {
+    font-size: 1.7em;
+  }
+
+  #homeBody {
+    font-size: 1.5em;
+  }
+
+  div#nav li {
+    display: block;
+    /* background-color: #960300; */
+    margin-bottom: .2em;
+    text-align: center;
+    padding-top: 0.75em;
+    padding-bottom: 0.75em;
+  }
+
+  .contentContainer {
+    padding-top: 24em;
+  }
+
+  #game {
+    margin-top: 30em;
+  }
+}
